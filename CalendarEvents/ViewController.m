@@ -7,16 +7,20 @@
 //
 
 #import "ViewController.h"
-
+#import "ICKDayCalendarView.h"
 @interface ViewController ()
+@property (nonatomic, strong)ICKDayCalendarView *dayCalendarView;
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.dayCalendarView = [[ICKDayCalendarView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.view addSubview:self.dayCalendarView];
 }
 
 

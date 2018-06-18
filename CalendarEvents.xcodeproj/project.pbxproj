@@ -15,6 +15,13 @@
 		4272790320D782F800DF3BD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272790220D782F800DF3BD8 /* main.m */; };
 		4272790D20D782F800DF3BD8 /* CalendarEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272790C20D782F800DF3BD8 /* CalendarEventsTests.m */; };
 		4272791820D782F800DF3BD8 /* CalendarEventsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272791720D782F800DF3BD8 /* CalendarEventsUITests.m */; };
+		4272792820D7838A00DF3BD8 /* ICKDayCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272792720D7838A00DF3BD8 /* ICKDayCalendarView.m */; };
+		4272792B20D787B900DF3BD8 /* ICKDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272792A20D787B900DF3BD8 /* ICKDayCollectionViewCell.m */; };
+		4272792E20D7907000DF3BD8 /* ICKHourItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272792D20D7907000DF3BD8 /* ICKHourItemView.m */; };
+		4272793120D790F400DF3BD8 /* ICKHoursView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272793020D790F400DF3BD8 /* ICKHoursView.m */; };
+		4272793720D7948400DF3BD8 /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272793620D7948400DF3BD8 /* NSDate+Calendar.m */; };
+		4272793A20D7A7A000DF3BD8 /* ICKCalendarEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272793920D7A7A000DF3BD8 /* ICKCalendarEventButton.m */; };
+		4272793E20D7AF0000DF3BD8 /* ICKCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272793D20D7AF0000DF3BD8 /* ICKCalendarEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,20 @@
 		4272791320D782F800DF3BD8 /* CalendarEventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarEventsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4272791720D782F800DF3BD8 /* CalendarEventsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarEventsUITests.m; sourceTree = "<group>"; };
 		4272791920D782F800DF3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4272792620D7838A00DF3BD8 /* ICKDayCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKDayCalendarView.h; sourceTree = "<group>"; };
+		4272792720D7838A00DF3BD8 /* ICKDayCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKDayCalendarView.m; sourceTree = "<group>"; };
+		4272792920D787B900DF3BD8 /* ICKDayCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKDayCollectionViewCell.h; sourceTree = "<group>"; };
+		4272792A20D787B900DF3BD8 /* ICKDayCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKDayCollectionViewCell.m; sourceTree = "<group>"; };
+		4272792C20D7907000DF3BD8 /* ICKHourItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKHourItemView.h; sourceTree = "<group>"; };
+		4272792D20D7907000DF3BD8 /* ICKHourItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKHourItemView.m; sourceTree = "<group>"; };
+		4272792F20D790F400DF3BD8 /* ICKHoursView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKHoursView.h; sourceTree = "<group>"; };
+		4272793020D790F400DF3BD8 /* ICKHoursView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKHoursView.m; sourceTree = "<group>"; };
+		4272793520D7948400DF3BD8 /* NSDate+Calendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
+		4272793620D7948400DF3BD8 /* NSDate+Calendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
+		4272793820D7A7A000DF3BD8 /* ICKCalendarEventButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKCalendarEventButton.h; sourceTree = "<group>"; };
+		4272793920D7A7A000DF3BD8 /* ICKCalendarEventButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKCalendarEventButton.m; sourceTree = "<group>"; };
+		4272793C20D7AF0000DF3BD8 /* ICKCalendarEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICKCalendarEvent.h; sourceTree = "<group>"; };
+		4272793D20D7AF0000DF3BD8 /* ICKCalendarEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICKCalendarEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +126,8 @@
 				427278F420D782F700DF3BD8 /* AppDelegate.m */,
 				427278F620D782F700DF3BD8 /* ViewController.h */,
 				427278F720D782F700DF3BD8 /* ViewController.m */,
+				4272793B20D7AEE000DF3BD8 /* Model */,
+				4272792520D7835A00DF3BD8 /* View */,
 				427278F920D782F700DF3BD8 /* Main.storyboard */,
 				427278FC20D782F800DF3BD8 /* Assets.xcassets */,
 				427278FE20D782F800DF3BD8 /* LaunchScreen.storyboard */,
@@ -130,6 +153,34 @@
 				4272791920D782F800DF3BD8 /* Info.plist */,
 			);
 			path = CalendarEventsUITests;
+			sourceTree = "<group>";
+		};
+		4272792520D7835A00DF3BD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4272792620D7838A00DF3BD8 /* ICKDayCalendarView.h */,
+				4272792720D7838A00DF3BD8 /* ICKDayCalendarView.m */,
+				4272792C20D7907000DF3BD8 /* ICKHourItemView.h */,
+				4272792D20D7907000DF3BD8 /* ICKHourItemView.m */,
+				4272792F20D790F400DF3BD8 /* ICKHoursView.h */,
+				4272793020D790F400DF3BD8 /* ICKHoursView.m */,
+				4272792920D787B900DF3BD8 /* ICKDayCollectionViewCell.h */,
+				4272792A20D787B900DF3BD8 /* ICKDayCollectionViewCell.m */,
+				4272793820D7A7A000DF3BD8 /* ICKCalendarEventButton.h */,
+				4272793920D7A7A000DF3BD8 /* ICKCalendarEventButton.m */,
+				4272793520D7948400DF3BD8 /* NSDate+Calendar.h */,
+				4272793620D7948400DF3BD8 /* NSDate+Calendar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4272793B20D7AEE000DF3BD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4272793C20D7AF0000DF3BD8 /* ICKCalendarEvent.h */,
+				4272793D20D7AF0000DF3BD8 /* ICKCalendarEvent.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				427278F820D782F700DF3BD8 /* ViewController.m in Sources */,
+				4272792B20D787B900DF3BD8 /* ICKDayCollectionViewCell.m in Sources */,
+				4272793E20D7AF0000DF3BD8 /* ICKCalendarEvent.m in Sources */,
+				4272792820D7838A00DF3BD8 /* ICKDayCalendarView.m in Sources */,
+				4272793120D790F400DF3BD8 /* ICKHoursView.m in Sources */,
+				4272792E20D7907000DF3BD8 /* ICKHourItemView.m in Sources */,
 				4272790320D782F800DF3BD8 /* main.m in Sources */,
+				4272793720D7948400DF3BD8 /* NSDate+Calendar.m in Sources */,
+				4272793A20D7A7A000DF3BD8 /* ICKCalendarEventButton.m in Sources */,
 				427278F520D782F700DF3BD8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
