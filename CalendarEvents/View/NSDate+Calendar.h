@@ -15,4 +15,9 @@
 + (NSDate *)dateWithHour:(NSInteger)hour min:(NSInteger)min;
 + (NSDateComponents *)componentsWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 + (NSDateComponents *)componentsWithHour:(NSInteger)hour min:(NSInteger)min;
+
++ (BOOL)isSameDay:(NSDate*)date1 date2:(NSDate*)date2;
++ (BOOL)isSameDayTime:(NSDate*)date1 date2:(NSDate*)date2;
++ (NSString *)getWholeFormatTime:(NSDate *)date;
+
 @end

@@ -54,4 +54,52 @@
     
     return components;
 }
+
+
++ (BOOL)isSameDay:(NSDate*)date1 date2:(NSDate*)date2
+{
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
+    NSDateComponents* comp1 = [calendar components:unitFlags fromDate:date1];
+    NSDateComponents* comp2 = [calendar components:unitFlags fromDate:date2];
+    return [comp1 day]   == [comp2 day] &&
+    [comp1 month] == [comp2 month] &&
+    [comp1 year]  == [comp2 year];
+}
+
++ (BOOL)isSameDayTime:(NSDate*)date1 date2:(NSDate*)date2 {
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
+    NSDateComponents* comp1 = [calendar components:unitFlags fromDate:date1];
+    NSDateComponents* comp2 = [calendar components:unitFlags fromDate:date2];
+    return [comp1 hour] == [comp2 hour] &&
+    [comp1 minute] == [comp2 minute] &&
+    [comp1 second] == [comp2 second] &&
+    [comp1 day]   == [comp2 day] &&
+    [comp1 month] == [comp2 month] &&
+    [comp1 year]  == [comp2 year];
+}
+
+
++ (NSString *)getWholeFormatTime:(NSDate *)date
+{
+    NSString *time = @"";
+    if (date != nil) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"YYYYMMddHHMMss"];
+        time = [dateFormatter stringFromDate:date];
+        if (time == nil) {
+            time = @"";
+        }
+    } else {
+        time = @"";
+    }
+    return time;
+}
+
+
+
+
 @end

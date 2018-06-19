@@ -96,15 +96,15 @@
 }
 - (void)randomEvents {
     NSMutableArray *list = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 10; i++) {
         ICKCalendarEvent *event = [[ICKCalendarEvent alloc] init];
         event.beginDate = [NSDate date];
-//        NSDateComponents *comp = [NSDate componentsWithHour:20 min:20];
-//        event.endDate = [NSDate dateWithYear:2018 month:6 day:18];
+
         event.endDate = [NSDate dateWithTimeIntervalSinceNow:5000 / (i+1)];
         event.eventId = [NSString stringWithFormat:@"%d",i];
         [list addObject:event];
     }
+    
     [self.eventDict setObject:[NSDate date] forKey:@"date"];
     [self.eventDict setObject:list forKey:@"events"];
 }
